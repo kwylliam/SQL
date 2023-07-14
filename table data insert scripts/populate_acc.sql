@@ -1,0 +1,10 @@
+DECLARE
+  s INTEGER := 1;
+  f INTEGER := 5;
+BEGIN
+  FOR i IN s..f LOOP
+    INSERT INTO account
+    VALUES (DEFAULT, DEFAULT);
+  END LOOP;
+  COMMIT;
+END;
